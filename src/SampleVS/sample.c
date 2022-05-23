@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-
+void func(double b)
+{
+	long *p = 0;
+}
 
 #if 0
 
