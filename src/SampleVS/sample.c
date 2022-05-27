@@ -1,20 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "csderrorutil.h"
 
-void func(double b)
+void foo()
 {
-	long *p = 0;
+	csd_exit_fail("test");
 }
 
 #if 0
 
 int main()
 {
-	srand((unsigned int)time(NULL));
-	int* p = foo(10, 20);
+	int n;
 
-	printf("%d\n", *p);
+	srand((unsigned int)time(NULL));
+	printf("Input a number:");
+	scanf("%d", &n);
+
+	int *p;
+
+	p = (int *)malloc(n * sizeof(int));
+
+	if (!p) {
+		fprintf(stderr, "Can not allocate memory\n");
+		exit(EXIT_FAILURE);
+	}
+
+	for (int i = 0; i < n; ++i)
+		p[i] = rand() % 100;
+	
+	for (int i = 0; i < n; ++i)
+		printf("%d ", p[i]);
+
+	putchar('\n');
+
+	free(p);	
 
 	return 0;
 }
