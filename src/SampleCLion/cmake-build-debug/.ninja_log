@@ -1,0 +1,17 @@
+# ninja log v5
+3	957	1654846108655472025	CMakeFiles/sample.dir/main.cpp.o	1045a447dad01fee
+958	1057	1654846108763024694	sample	8fff560b7115cee3
+5	151	1654838572966429165	CMakeFiles/sample.dir/csdutil.c.o	8116f7515104e2ea
+5	95	1654845604799075291	CMakeFiles/sample.dir/datetimeutil.c.o	2308d52286666e0e
+4	161	1654838572978451239	CMakeFiles/sample.dir/csderrorutil.c.o	7bb8515eec4517af
+3	62	1654846850128768046	CMakeFiles/sample.dir/datetimeutil.c.o	2308d52286666e0e
+3	68	1654846850135275218	CMakeFiles/sample.dir/cssdnumeric.cpp.o	dfadd8704cd65376
+3	936	1654846850998424229	CMakeFiles/sample.dir/main.cpp.o	1045a447dad01fee
+936	1056	1654846851120651793	sample	3f3239b08aa2d3ba
+0	8	0	clean	3c8e6cc385ee00ba
+3	89	1654846859921289825	CMakeFiles/sample.dir/datetimeutil.c.o	2308d52286666e0e
+3	98	1654846859928057327	CMakeFiles/sample.dir/cssdnumeric.cpp.o	dfadd8704cd65376
+3	114	1654846859945845434	CMakeFiles/sample.dir/csdutil.c.o	8116f7515104e2ea
+2	119	1654846859951066900	CMakeFiles/sample.dir/csderrorutil.c.o	7bb8515eec4517af
+4	932	1654846860762142248	CMakeFiles/sample.dir/main.cpp.o	1045a447dad01fee
+932	998	1654846860831961377	sample	3f3239b08aa2d3ba
