@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 
 file(GLOB SRC "*.h" "*.hpp" "*.cpp" "*.c")
 
-add_executable(sample ${SRC} csd/errorutil.h csd/util.h)
+add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
+
+add_executable(sample ${SRC} csd/errorutil.h csd/util.h Sensor.cpp Sensor.hpp)
 
 
