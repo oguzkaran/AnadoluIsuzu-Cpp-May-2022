@@ -1,41 +1,17 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Aşağıdaki örnekte sınıfın ctor'ları içerisinde veri elemanlarına değerler verilmiştir
+    Bir veri elemanı gizlendiğinde sınıfın müşteri kodları bu elemanlara duruma göre değer vermek istiyor veya değeri
+    kullanmak istiyor olabilir. Böyle bir durum için bu elemanlara erişen public fonksiyonlar yazılabilir. Veri elemanlarına
+    erişip değerlerini elde etmek için kullanılan fonksiyonlara "get fonksiyonları (getters)" denir. Veri elemanlarının
+    değerlerini değiştirmeye yarayan fonksiyonlara ise "set fonksiyonları (setters)" denir. Sınıfın bu şekildeki
+    fonksiyonlarında da "accessors" denir. get/set fonksiyonu bir elemana karşılık gelmiyor olabilir. Nasıl yazılırsa
+    "accessor" fonksiyonlar müşteri kodlar açısından "get" ve "set" fonkaiyonlarıdır
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
 
-class Sample {
-public:
-    int a;
-    int b;
-
-    Sample();
-    Sample(int x, int y);
-};
-
-
-Sample::Sample()
-{
-    std::cout << "I am a default ctor\n";
-    a = b = 0;
-}
-
-Sample::Sample(int x, int y)
-{
-    std::cout << "I am a ctor with parameters: int, int\n";
-    a = x;
-    b = y;
-}
-
 int main()
 {
-    Sample s{};
-
-    std::cout << "s.a = " << s.a << ", s.b = " << s.b << '\n';
-
-    Sample k{10, 20};
-
-    std::cout << "k.a = " << k.a << ", k.b = " << k.b << '\n';
 
 
     return 0;
 }
+
