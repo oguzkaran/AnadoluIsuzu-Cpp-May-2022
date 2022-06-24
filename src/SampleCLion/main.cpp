@@ -1,10 +1,19 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Bir veri elemanı gizlendiğinde sınıfın müşteri kodları bu elemanlara duruma göre değer vermek istiyor veya değeri
-    kullanmak istiyor olabilir. Böyle bir durum için bu elemanlara erişen public fonksiyonlar yazılabilir. Veri elemanlarına
-    erişip değerlerini elde etmek için kullanılan fonksiyonlara "get fonksiyonları (getters)" denir. Veri elemanlarının
-    değerlerini değiştirmeye yarayan fonksiyonlara ise "set fonksiyonları (setters)" denir. Sınıfın bu şekildeki
-    fonksiyonlarında da "accessors" denir. get/set fonksiyonu bir elemana karşılık gelmiyor olabilir. Nasıl yazılırsa
-    "accessor" fonksiyonlar müşteri kodlar açısından "get" ve "set" fonkaiyonlarıdır
+    Operatör fonksiyonları (operator overloading): Sınıf nesnelerinin sanki temel türlermiş gibi birçok operatörle
+    kullanılmasına olanak sağlayan mekanizmadır.
+
+    Operatör fonksiyonları dile ilave bir işlevsellik kazandırmaz. Yalnızca okunabaililiği/algılanabilirliği artırır.
+    Bir operatör fonksiyonu bazı istisnalar hariç "üye operatör fonskiyonu" veya "global operatör fonksiyonu" olarak
+    yazılabilir. Operatör fonksiyonlarının geri dönüş değerleri herhangi bir türden olabilir ancak olması gereken uygun
+    türleri vardır. Örneğin + operatör fonksiyonun ayı sınıf türünden bir nesneye dönmesi uygun olur. Benzer biçimde
+    < operatörüne ilişkin operatör fonksiyonunun da bool türden bir değer geri dönemsi uygundur.
+
+    Derleyici iki operandlı bir operatör sembolü ile karşılaşırsa şunları yapar:
+    1. Önce operandların türlerine bakar
+    2. Eğer operandlar temel türlerte ilişkinse (sınıf değilse) küçük tür büyük türe dönüştürlür ve işlemin sonucu büyük
+    tür türünden çıkar (int türünden küük olan türler kendi aralarında işleme sokulursa sonuç int türden çıkar)
+    3. Eğer operandlardan en az birisi bir sınıf türümndense derleyici bu işlemi yapabilecek bir operatör fonksiyonu
+    araştırır. Böylece "candidate functions"'ları belirler.
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
 

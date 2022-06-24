@@ -10,7 +10,7 @@ Sensor::Sensor(const char *name, const char *host, std::uint16_t port, bool open
         ++ms_count;
 
     setName(name);
-    setHost(host)
+    setHost(host);
 }
 
 void Sensor::resetCount()
@@ -40,8 +40,7 @@ void Sensor::setHost(const char *h)
 
 void Sensor::setPort(std::uint16_t p)
 {
-    //...
-    m_port = p;
+    m_port = p < 1024 || p > 65535 ? 1024 : p;
 }
 
 
