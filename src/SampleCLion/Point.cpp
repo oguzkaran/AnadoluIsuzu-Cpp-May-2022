@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.cpp
     Author          : Oğuz Karan
-    Last Update     : 24th Jun 2022
+    Last Update     : 29th Jun 2022
     Platform        : All
     Version         : 3.0.0
 
@@ -15,9 +15,15 @@
 #include <iostream>
 #include <cmath>
 
-void Point::print() const
+
+std::ostream &operator<<(std::ostream &os, const Point &p)
 {
-    std::cout << "(" << m_x << ", " << m_y << ")\n";
+    return os << "(" << p.m_x << ", " << p.m_y << ")";
+}
+
+std::istream &operator>>(std::istream &is, Point &p)
+{
+    return is >> p.m_x >> p.m_y;
 }
 
 void Point::offset(double dx, double dy)

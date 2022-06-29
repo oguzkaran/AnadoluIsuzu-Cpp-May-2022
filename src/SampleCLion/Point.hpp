@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.hpp
     Author          : Oğuz Karan
-    Last Update     : 24th Jun 2022
+    Last Update     : 29th Jun 2022
     Platform        : All
     Version         : 3.0.0
 
@@ -13,7 +13,11 @@
 #ifndef POINT_HPP_
 #define POINT_HPP_
 
+#include <iostream>
+
 class Point {
+    friend std::ostream &operator<<(std::ostream &os, const Point &p);
+    friend std::istream &operator>>(std::istream &is, Point &p);
 private:
     double m_x, m_y;
 public:
@@ -24,7 +28,6 @@ public:
     double x() const {return m_x;}
     double &y()  {return m_y;}
     double y() const {return m_y;}
-    void print() const;
     void offset(double dx, double dy);
     void offset(double dxy);
     double distance() const;

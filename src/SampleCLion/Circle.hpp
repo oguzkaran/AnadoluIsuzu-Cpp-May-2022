@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Circle.hpp
     Author          : Oğuz Karan
-    Last Update     : 24th Jun 2022
+    Last Update     : 29th Jun 2022
     Platform        : All
     Version         : 1.0.1
 
@@ -13,7 +13,11 @@
 #ifndef CIRCLE_HPP_
 #define CIRCLE_HPP_
 
+#include <iostream>
+
 class Circle {
+    friend std::ostream &operator <<(std::ostream &os, const Circle &c);
+    friend std::istream &operator >>(std::istream &is, Circle &c);
 private:
     static constexpr double ms_pi = 3.14;
     double m_r;
