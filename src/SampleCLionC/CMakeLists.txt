@@ -3,4 +3,8 @@ project(SampleCLionC C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(SampleCLionC main.c)
+file(GLOB SRC "*.h" "*.hpp" "*.cpp" "*.c")
+
+add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
+
+add_executable(sample ${SRC})
