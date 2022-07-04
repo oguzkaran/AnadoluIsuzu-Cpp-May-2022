@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-struct SAMPLE {
-    double b;
-    int a;
-    short c;
-
-};
+typedef int I;
+typedef int IA[5];
 
 int main(void)
 {
-    printf("sizeof(int) = %u, sizeof(double) = %u, sizeof(short) = %u\n", sizeof(int), sizeof(double), sizeof(short));
-    printf("sizeof(struct SAMPLE) = %u\n", sizeof(struct SAMPLE));
-    struct SAMPLE s;
+    I x = 20;
+    IA a = {1, 2, 3, 4, 5};
 
-    printf("&s.a = %p, &s.b = %p, &s.c = %p\n", &s.a, &s.b, &s.c);
+    for (int i = 0; i < 5; ++i)
+        printf("%d ", a[i]);
+
+    printf("\nx = %d\n", x);
+
 
     return 0;
 }
