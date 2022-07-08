@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    File Name       : Fraction.hpp
+    File Name       : Fraction.cpp
     Author          : Oğuz Karan
     Last Update     : 11th Jul 2022
     Platform        : All
