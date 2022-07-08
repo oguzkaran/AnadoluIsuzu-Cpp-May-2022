@@ -60,7 +60,7 @@ namespace org::csystem::math {
         double delta() const
         { return m_delta; }
 
-        double delta(double value)
+        void delta(double value)
         { m_delta = value; }
 
     public:
