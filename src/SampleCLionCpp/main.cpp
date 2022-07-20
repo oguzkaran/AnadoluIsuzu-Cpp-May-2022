@@ -14,17 +14,17 @@ int main(int argc, char **argv)
 
     cout << s << '\n';
 
-    auto ch{randomChar()};
+    char ch = randomChar();
 
     cout << "Character:" << ch << '\n';
 
     for (size_t i{}; i < s.size(); ++i)
-        s[i] ^= ch;
+        s[i] = s[i] ^ ch;
 
     cout << s << '\n';
 
     for (size_t i{}; i < s.size(); ++i)
-        s[i] ^= ch;
+        s[i] += ch;
 
     cout << s << '\n';
 
