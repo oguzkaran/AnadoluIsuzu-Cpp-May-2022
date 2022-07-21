@@ -145,20 +145,40 @@ private:
     std::string m_name;
     std::size_t m_flightHour;
 public:
-    Pilot(std::uint16_t title = 0, const char *name = nullptr, std::size_t flightHour = 0) : m_title{title}, m_name{name}, m_flightHour{flightHour}
+    Pilot() = default;
+    Pilot(std::uint16_t title, const char *name, std::size_t flightHour) : m_title{title}, m_name{name}, m_flightHour{flightHour}
     {}
 
     //...
 
     std::uint16_t title() const {return m_title;}
+    void title(std::uint16_t t);
     std::string name() const {return m_name;}
+    void name(const std::string &n);
     std::size_t flightHour() const {return m_flightHour;}
+    void flightHour(std::size_t hour);
     //...
 };
 
 std::ostream &operator<<(std::ostream &os, const Pilot &p)
 {
     return os << "(" << p.m_title << ")" << p.m_name << ", " << p.m_flightHour;
+}
+
+void Pilot::title(std::uint16_t t)
+{
+    //...
+    m_title = t;
+}
+
+void Pilot::name(const std::string &n)
+{
+    m_name = n;
+}
+
+void Pilot::flightHour(std::size_t hour)
+{
+    m_flightHour = hour;
 }
 
 class Plane {
@@ -169,8 +189,11 @@ private:
 public:
     Plane(std::size_t count, const Pilot *pilots /*...*/)  : m_engineCount{count}, m_engines{new Engine[count]}
     {
-        for (int i{}; i < 3; ++i)
-            m_pilots[i] = pilots[i];
+        for (int i{}; i < 3; ++i) {
+            m_pilots[i].title(pilots[i].title());
+            m_pilots[i].name(pilots[i].name());
+            m_pilots[i].flightHour(pilots[i].flightHour());
+        }
     }
 
     Plane(const Plane &) = delete;
