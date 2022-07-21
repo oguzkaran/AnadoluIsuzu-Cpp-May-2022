@@ -33,7 +33,6 @@ char* randomtext(char s[], size_t size);
 
 char* csdgets(char* buf, size_t n);
 char* csdgetscs(char* buf, size_t n);
-void clearstdin(void);
 int islittleendian(void);
 
 #endif /*CSDUTIL_H_*/

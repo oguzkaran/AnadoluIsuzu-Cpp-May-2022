@@ -18,6 +18,7 @@ extern "C" {
 	int csd_random_int(int a, int b);
 
     void csd_fill_random_int_array(int *p, size_t, int min, int max);
+    char *csd_struppper(char *s);
 #ifdef __cplusplus
 }
 #endif

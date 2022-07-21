@@ -1,6 +1,7 @@
 #ifndef SENSOR_HPP_
 #define SENSOR_HPP_
 
+#include <string>
 #include <cstdint>
 #include <cstddef>
 
@@ -9,8 +10,8 @@ namespace AnadoluIsuzu {
     class Sensor {
     private:
         static std::size_t ms_count;
-        char m_name[256];
-        char m_host[16];
+        std::string m_name;
+        std::string m_host;
         std::uint16_t m_port;
         bool m_open;
     public:
@@ -23,10 +24,10 @@ namespace AnadoluIsuzu {
         std::uint16_t getPort() const
         { return m_port; }
 
-        const char *getName() const
+        std::string getName() const
         { return m_name; }
 
-        const char *getHost() const
+        std::string getHost() const
         { return m_host; }
 
         bool isOpen() const

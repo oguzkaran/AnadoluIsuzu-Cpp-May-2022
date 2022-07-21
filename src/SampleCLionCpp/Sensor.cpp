@@ -1,17 +1,14 @@
 #include <iostream>
-#include <cstring>
 #include "Sensor.hpp"
 
 namespace AnadoluIsuzu {
     std::size_t Sensor::ms_count;
 
-    Sensor::Sensor(const char *name, const char *host, std::uint16_t port, bool open) : m_port{port}
+    Sensor::Sensor(const char *name, const char *host, std::uint16_t port, bool open)
+                    : m_port{port}, m_name{name}, m_host{host}, m_open{open}
     {
         if (open)
             ++ms_count;
-
-        setName(name);
-        setHost(host);
     }
 
     void Sensor::resetCount()
@@ -27,16 +24,16 @@ namespace AnadoluIsuzu {
         setPort(p);
     }
 
-    void Sensor::setName(const char *n)
+    void Sensor::setName(const char *name)
     {
         //...
-        std::strcpy(m_name, n);
+        m_name = name;
     }
 
-    void Sensor::setHost(const char *h)
+    void Sensor::setHost(const char *host)
     {
         //...
-        std::strcpy(m_host, h);
+        m_host = host;
     }
 
     void Sensor::setPort(std::uint16_t p)
