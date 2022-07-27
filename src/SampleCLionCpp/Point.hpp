@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.hpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 27th Jul 2022
     Platform        : All
-    Version         : 4.0.0
+    Version         : 5.0.0
 
     Header file for Point class that represents a point in cartesian coordinates
 
@@ -18,15 +18,14 @@
 namespace org::csystem::math::geometry {
     class Point {
         friend std::ostream &operator<<(std::ostream &os, const Point &p);
-
         friend std::istream &operator>>(std::istream &is, Point &p);
-
     private:
         double m_x, m_y;
+    private:
+        explicit Point(double x, double y, bool cartesian);
     public:
-        explicit Point(double x = 0., double y = 0.) : m_x{x}, m_y{y}
-        {}
-
+        static Point createCartesian(double x, double y);
+        static Point createPolar(double r, double theta);
     public:
         double &x()
         { return m_x; }

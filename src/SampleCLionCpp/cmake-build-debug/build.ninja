@@ -56,6 +56,13 @@ build CMakeFiles/sample.dir/AlertDialog.cpp.o: CXX_COMPILER__sample_Debug /Users
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
 
+build CMakeFiles/sample.dir/AnalyticalCircle.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/AnalyticalCircle.cpp || cmake_object_order_depends_target_sample
+  DEFINES = -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = CMakeFiles/sample.dir/AnalyticalCircle.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/sample.dir
+  OBJECT_FILE_DIR = CMakeFiles/sample.dir
+
 build CMakeFiles/sample.dir/Circle.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/Circle.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Circle.cpp.o.d
@@ -155,7 +162,7 @@ build CMakeFiles/sample.dir/utility.cpp.o: CXX_COMPILER__sample_Debug /Users/ogu
 #############################################
 # Link the executable sample
 
-build sample: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles/sample.dir/AlertDialog.cpp.o CMakeFiles/sample.dir/Circle.cpp.o CMakeFiles/sample.dir/Complex.cpp.o CMakeFiles/sample.dir/Date.cpp.o CMakeFiles/sample.dir/File.cpp.o CMakeFiles/sample.dir/Fraction.cpp.o CMakeFiles/sample.dir/Point.cpp.o CMakeFiles/sample.dir/Sensor.cpp.o CMakeFiles/sample.dir/csderrorutil.c.o CMakeFiles/sample.dir/csdnumeric.cpp.o CMakeFiles/sample.dir/csdutil.c.o CMakeFiles/sample.dir/datetimeutil.c.o CMakeFiles/sample.dir/main.cpp.o CMakeFiles/sample.dir/utility.cpp.o
+build sample: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles/sample.dir/AlertDialog.cpp.o CMakeFiles/sample.dir/AnalyticalCircle.cpp.o CMakeFiles/sample.dir/Circle.cpp.o CMakeFiles/sample.dir/Complex.cpp.o CMakeFiles/sample.dir/Date.cpp.o CMakeFiles/sample.dir/File.cpp.o CMakeFiles/sample.dir/Fraction.cpp.o CMakeFiles/sample.dir/Point.cpp.o CMakeFiles/sample.dir/Sensor.cpp.o CMakeFiles/sample.dir/csderrorutil.c.o CMakeFiles/sample.dir/csdnumeric.cpp.o CMakeFiles/sample.dir/csdutil.c.o CMakeFiles/sample.dir/datetimeutil.c.o CMakeFiles/sample.dir/main.cpp.o CMakeFiles/sample.dir/utility.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/sample.dir
   POST_BUILD = :

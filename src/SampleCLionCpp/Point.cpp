@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.cpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 27th Jul 2022
     Platform        : All
-    Version         : 4.0.0
+    Version         : 5.0.0
 
     Implementation file for Point class that represents a point in cartesian coordinates
 
@@ -25,6 +25,20 @@ namespace org::csystem::math::geometry {
     std::istream &operator>>(std::istream &is, Point &p)
     {
         return is >> p.m_x >> p.m_y;
+    }
+
+    Point::Point(double x, double y, bool cartesian) : m_x{cartesian ? x : x * std::cos(y)}, m_y{cartesian ? x : x * std::sin(y)}
+    {
+    }
+
+    Point Point::createCartesian(double x, double y)
+    {
+        return Point{x, y, true};
+    }
+
+    Point Point::createPolar(double r, double theta)
+    {
+        return Point{r, theta, false};
     }
 
     void Point::offset(double dx, double dy)

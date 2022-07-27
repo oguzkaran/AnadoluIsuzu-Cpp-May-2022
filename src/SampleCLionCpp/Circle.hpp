@@ -18,9 +18,7 @@
 namespace org::csystem::math::geometry {
     class Circle {
         friend std::ostream &operator<<(std::ostream &os, const Circle &c);
-
         friend std::istream &operator>>(std::istream &is, Circle &c);
-
     private:
         static constexpr double ms_pi = 3.14;
         double m_r;
