@@ -1,23 +1,74 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    AnalyticalCircle sınıfının 1.0.0 versiyonu
+    Bir referansın ve bir pointer'ın iki tane türü vardır: static, dynamic
+    - static type: Referansın ya da göstericinin bildirildiği ya da tanımlandığı türdür. Değişmez. Derleme zamanına
+    ilişkindir. Referansın ya da pointer'ın türü dendiğinde static tür anlaşılır.
+
+    - dynamic type: Bir referansın ya da göstericinin içerisinde bulunan adrese ilişkin bellekte yaratılmış olan gerçek
+    nesnenin türüdür. Değişebilir. Çalışma zamanına ilişkindir
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
-#include "AnalyticalCircle.hpp"
+
+class A {
+    //...
+private:
+    int m_x;
+public:
+    A(int x) : m_x{x}
+    {}
+
+    A(const A&r) : m_x{r.m_x}
+    {
+        std::cout << "Copy ctor of A\n";
+    }
+
+    A &operator=(const A &r)
+    {
+        m_x = r.m_x;
+        std::cout << "Copy assignment operator function of A\n";
+
+        return *this;
+    }
+
+    int x() const {return m_x;}
+    void x(int value) {m_x = value;}
+    //...
+};
+
+
+class B : public A {
+private:
+    int m_y;
+public:
+    B(int x, int y) : A{x}, m_y{y}
+    {}
+    B(const B&r) : A{r}, m_y{r.m_y}
+    {
+        std::cout << "Copy ctor of B\n";
+    }
+
+    B &operator=(const B &r)
+    {
+        x(r.x());
+        m_y = r.m_y;
+        std::cout << "Copy assignment operator function of B\n";
+
+        return *this;
+    }
+
+    int y() const {return m_y;}
+    void y(int value) {m_y = value;}
+    //...
+};
 
 int main()
 {
     using namespace std;
-    using com::isuzu::math::geometry::AnalyticalCircle;
 
-    AnalyticalCircle ac{-2.3, 400.5, -678.9};
+    B b{10, 20};
 
-    cout << "Radius:" << ac.radius() << '\n';
-    cout << "Area:" << ac.area() << '\n';
-    cout << "Circumference:" << ac.circumference() << '\n';
-    cout << "(" << ac.x() << ", " << ac.y() << ")\n";
+    A *p = &b;
+    A &r = b;
 
-    ac.x(23.5);
-
-    cout << "(" << ac.x() << ", " << ac.y() << ")\n";
     return 0;
 }
+
