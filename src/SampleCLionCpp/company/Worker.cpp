@@ -15,4 +15,10 @@ namespace com::anadoluisuzu::company {
 
         return *this;
     }
+
+    double Worker::calculateInsurancePayment() const
+    {
+        return m_feePerHour * m_hourPerDay * 30;
+    }
+
 }

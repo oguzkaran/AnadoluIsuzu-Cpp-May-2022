@@ -12,4 +12,9 @@ namespace com::anadoluisuzu::company {
         m_department = d;
         return *this;
     }
+
+    double Manager::calculateInsurancePayment() const
+    {
+        return m_salary * 1.5;
+    }
 }

@@ -16,6 +16,8 @@ namespace com::anadoluisuzu::company {
         Employee &citizenId(const std::string &id);
         std::string address() const {return m_address;}
         Employee &address(const std::string &a);
+
+        virtual double calculateInsurancePayment() const = 0;
     };
 }
 

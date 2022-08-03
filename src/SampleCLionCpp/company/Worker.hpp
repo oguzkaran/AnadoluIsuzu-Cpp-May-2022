@@ -13,6 +13,8 @@ namespace com::anadoluisuzu::company {
         Worker &feePerHour(double fee);
         int hourPerDay() const {return m_hourPerDay;}
         Worker &hourPerDay(int hour);
+
+        double calculateInsurancePayment() const override;
     };
 }
 

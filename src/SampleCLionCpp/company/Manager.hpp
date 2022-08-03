@@ -16,6 +16,8 @@ namespace com::anadoluisuzu::company {
         Manager &salary(double s);
         std::string department() const {return m_department;}
         Manager &department(const std::string &d);
+
+        double calculateInsurancePayment() const override;
     };
 }
 
