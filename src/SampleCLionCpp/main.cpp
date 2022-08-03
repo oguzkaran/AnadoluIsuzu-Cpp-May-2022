@@ -1,28 +1,60 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Runtime polymorphism: Programlamaya Biyoloji'den aktarılmıştır. Biyoloji'de polymophism "farklı doku ya da organların
-    evrim süreci içerisinde temel işlevleri aynı kalmak koşuluyla, bu işlevi yerine getirme biçiminin değişebilmesidir"
-    şeklinde tanımlanabilir. Örneğin duyma davranışı birbirinden türemiş canlılar arasında
-    şeklinde tanımlanabilir. Örneğin duyma davranışı birbirinden türemiş canlılar arasında farklılık gösterebilir. Ancak
-    işlev (göre ya da hedef) "duymaktır".
-
-    Nesne yönelimli programlamada "polymorphism" dendiğinde "runtime polymıorphism" anlaşılır. Ayrıca "compile time polymorphism"
-    de vardır. Bu konu C++'da genel olarak "template" kullanılarak geçekleştirilir. İleride ele alınacaktır
-
-    Runtime polymorphism için çok fazla tanım, betimleme, açıklma yapılabilse de genel olarak aşğıdaki 3 tanıma
-    indirgenebilir:
-
-    1. Biyolojik Tanım: Taban sınıfın bir fonksiyonunun türemiş sınıfta yeniden gerçekleştirilmesi
-    2. Yazılım Mühendisliği Tanımı: Türden bağımsız kod yazmaktır
-    3. Aşağı seviyeli Tanım: Önceden yazılmış kodların sonradan yazılmış kodları çağırabilmesidir
+    Yukarıdaki problem türemiş sınıfın ilgili taban kısmına erişerek çözülebilir. Dikkat edilirse x için erişim ayrıca
+    niteliklendirilmiştir. Base referansına ilk değer verme ise static_cast operatörü ile hangi Base kısmının alınacağı
+    belirtilerek yapılmıştır
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
+
+class Base {
+protected:
+    int x{};
+public:
+    virtual void foo();
+};
+
+void Base::foo()
+{
+    std::cout << "Base::foo\n";
+}
+
+class A : public Base {
+    void foo() override;
+};
+
+void A::foo()
+{
+    std::cout << "A::foo\n";
+}
+
+class B : public Base {
+    void foo() override;
+};
+
+void B::foo()
+{
+    std::cout << "B::foo\n";
+}
+
+class C : public A, public B {
+public:
+    void bar(int a)
+    {
+        A::x = a;
+        B::x = a * a;
+    }
+};
+
+
 
 int main()
 {
     using namespace std;
 
+    C c;
 
+    Base &r = static_cast<B &>(c);
 
+    r.foo();
 
     return 0;
 }
