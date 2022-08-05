@@ -4,10 +4,10 @@ project(Sample)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_C_STANDARD 11)
 
-file(GLOB SRC "*.h" "*.hpp" "*.cpp" "*.c", "parser/*.cpp" "parser/*.hpp")
+file(GLOB SRC "*.h" "*.hpp" "*.cpp" "*.c", "parser/*.cpp" "parser/*.hpp" "company/*.cpp" "company/*.hpp", "csd/*.cpp" "csd/*.hpp", "csd/*.c" "csd/*.h")
 
 add_compile_definitions(_CRT_SECURE_NO_WARNINGS)
 
-add_executable(sample ${SRC} csd/errorutil.h csd/util.h Sensor.cpp Sensor.hpp Point.cpp Point.hpp Complex.cpp Complex.hpp File.cpp File.hpp utility.cpp company/Employee.cpp company/Employee.hpp company/HumanResources.cpp company/HumanResources.hpp company/Manager.cpp company/Manager.hpp company/Worker.cpp company/Worker.hpp company/SalesManager.cpp company/SalesManager.hpp company/companyApp.cpp company/companyApp.hpp)
+add_executable(sample ${SRC})
 
 

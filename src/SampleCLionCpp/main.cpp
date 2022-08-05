@@ -1,13 +1,15 @@
 /*----------------------------------------------------------------------------------------------------------------------
-
+    Basit bir parser kütüphanesi ve demo bir örnek
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
 
+#include "parser/alphabeticcountapp.hpp"
+
 int main()
 {
-    using namespace std;
+    using org::csystem::parser::app::run;
 
-
+    run();
 
     return 0;
 }
