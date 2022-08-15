@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sample::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sample-Debug-c63f6d07d9ec644e1b3f.json",
+					"jsonFile" : "target-sample-Debug-b4bd741a58c1dcd121ab.json",
 					"name" : "sample",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Karans/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug",
-		"source" : "C:/Users/Karans/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp"
+		"build" : "/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug",
+		"source" : "/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }
