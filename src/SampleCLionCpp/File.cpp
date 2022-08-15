@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : File.cpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 15th Aug 2022
     Platform        : All
     Version         : 2.0.0
 
@@ -37,12 +37,12 @@ namespace org::csystem::io::file {
         return os;
     }
 
-    File::File(File &&r) : m_f{r.m_f}
+    File::File(File &&r) noexcept : m_f{r.m_f}
     {
         r.m_f = nullptr;
     }
 
-    File &File::operator=(File &&r)
+    File &File::operator=(File &&r) noexcept
     {
         if (this == &r)
             return *this;

@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Fraction.hpp
     Author          : Oğuz Karan
-    Last Update     : 11th Jul 2022
+    Last Update     : 15th Aug 2022
     Platform        : All
     Version         : 1.0.0
 
@@ -20,17 +20,20 @@ namespace org::csystem::math {
         friend std::ostream &operator<<(std::ostream &os, const Fraction &f);
         friend std::istream &operator>>(std::istream &is, Fraction &f);
     private:
-        int m_a, m_b;
+        int m_a{}, m_b{};
+    private:
+        void set(int a, int b);
     public:
-        Fraction();
+        Fraction() : m_a{}, m_b{1}
+        {}
         explicit Fraction(int a, int b = 0);
     public:
         //accessors
-        int numerator() const;
+        int numerator() const {return m_a;}
         void numerator(int a);
-        int denominator() const;
-        void denominator(int a);
-        double realValue() const;
+        int denominator() const {return m_b;}
+        void denominator(int b);
+        double realValue() const {return static_cast<double>(m_a) / m_b;}
     public:
         //additive operators
         Fraction operator+(const Fraction &other) const;

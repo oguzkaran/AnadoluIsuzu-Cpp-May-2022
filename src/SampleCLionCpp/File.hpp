@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : File.hpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 15th Aug 2022
     Platform        : All
     Version         : 2.0.0
 
@@ -34,9 +34,9 @@ namespace org::csystem::io::file {
 
         File &operator=(const File &) = delete;
 
-        File(File &&r);
+        File(File &&r) noexcept;
 
-        File &operator=(File &&r);
+        File &operator=(File &&r) noexcept;
 
         ~File();
 

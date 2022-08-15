@@ -1,99 +1,77 @@
 /*----------------------------------------------------------------------------------------------------------------------
-   Bir exception nesnesinin yeniden fırlatılması
+    Bir kesri temsil eden Fraction isimli sınıfı aşağıdaki açıklamalara göre yazınız.
+    Açıklamalar:
+    + Sınıf Matematikteki  bir kesri temsil ettiğinden pay ve payda değerleri tutulacaktır
+
+    - Sınıfın ilgili set ve get fonksiyonları yazılacaktır
+
+    + Pay'ın sıfırdan farklı, paydanın sıfır olması durumunda tanımsızlığa ilişkin bir mesaj verilecektir, pay ve paydanın
+    her ikisinin birden sıfır olması durumunda std::invalid_argument nesnesiuygun mesaj ile fırlatılacaktır
+
+    + Kesir her durumda sadeleşmiş bir biçimde tutulacaktır. Örneğin kesrin pay ve paydası sırasıyla 4 ve 18 olarak
+    verildiğinde kesir 2 / 9 olarak tutulacaktır.
+
+    + Kesir negatif ise işaret payda bulunacaktır. Örneğin kesrin pay ve paydası sırasıyla 3 ve -4 olarak verilmişse
+    kesir -3 / 4 biçiminde tutulacaktır
+
+    + Kesrin pay ve paydasının ikisinin birden negatif olması durumunda kesir pozitif olarak tutulacaktır
+
+    + Kesrin payının sıfır olması durumunda payda ne olursa olsun 1(bir) yapılacaktır
+
+    + Sınıf için yazılacak public bölüme ilişkin fonksiyonlar proje içerisinde Fraction.hpp dosyasında yazılmıştır
+
+    - Sınıfın kesri 1(bir) artıran ve bir azaltan inc ve dec metotları yazılacaktır
+
+    + Sınıfın public bölümünü değiştirmeden istediğiniz değişikliği ve eklemeleri yapabilirsiniz
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
-#include <stdexcept>
-#include <string>
-#include <cmath>
-#include "csd/utility.hpp"
+#include <cstring>
 
-std::string getRandomString(std::size_t n)
+void csd_swap(int &r1, int &r2)
 {
-    using org::csystem::util::random::randomInt;
-    using org::csystem::util::random::randomBool;
-    using std::string;
-    using std::out_of_range;
-    using std::to_string;
+    auto temp{r1};
 
-    string str;
-
-    if (n == 0 || str.max_size() < n)
-        throw out_of_range{"Invalid Argument: " + to_string(static_cast<unsigned long>(n))};
-
-    for (size_t i{}; i < n; ++i)
-        str += static_cast<char>(randomInt(0, 25) + (randomBool() ? 'A' : 'a'));
-
-    return str;
+    r1 = r2;
+    r2 = temp;
 }
 
-double csd_log10(double a)
+void csd_swap(double &r1, double &r2)
 {
-    if (a == 0)
-        throw std::invalid_argument{"UNDEFINED"};
+    auto temp{r1};
 
-    if (a < 0)
-        throw std::invalid_argument{"INDETERMINATE"};
-
-    return std::log10(a);
+    r1 = r2;
+    r2 = temp;
 }
 
-
-void doWork()
+void csd_swap(void *p1, void *p2, std::size_t size)
 {
-    using std::cout;
-    using std::cin;
+    using std::memcpy;
 
-    try {
-        double a;
-        int n;
+    auto pc1{static_cast<unsigned char *>(p1)};
+    auto pc2{static_cast<unsigned char *>(p2)};
+    auto pt{new unsigned char[size]};
 
-        cout << "Input a number:";
-        cout.flush();
-        cin >> a;
-
-        cout << "Input a count:";
-        cout.flush();
-        cin >> n;
-
-        auto result{csd_log10(a)};
-
-        cout << "log10(" << a << ") = " << result << '\n';
-
-        auto str{getRandomString(n)};
-
-        cout << "Generated Password:" << str << '\n';
-    }
-    catch (std::invalid_argument &ex) {
-        cout << "Invalid Argument in doWork:" << ex.what() << '\n';
-        throw;
-    }
-
-    cout << "doWork ends!...\n";
+    memcpy(pt, pc1, size);
+    memcpy(pc1, pc2, size);
+    memcpy(pc2, pt, size);
 }
 
 int main()
 {
     using namespace std;
 
-    int count;
+    int a = 10;
+    int b = 20;
+    double x = 3.4;
+    double y = 4.5;
 
-    cout << "Input count:";
-    cout.flush();
-    cin >> count;
+    csd_swap(&a, &b, sizeof(int));
+    csd_swap(&x, &y, sizeof(double ));
 
-    for (int i{}; i < count; ++i) {
-        try {
-            doWork();
-        }
-        catch (const std::out_of_range &ex) {
-            cout << "Out of range in main: " << ex.what() << '\n';
-        }
-        catch (std::invalid_argument &ex) {
-            cout << "Invalid Argument in main:" << ex.what() << '\n';
-        }
-
-        cout << "Thanks!...\n";
-    }
+    cout << "a = " << a << '\n';
+    cout << "b = " << b << '\n';
+    cout << "x = " << x << '\n';
+    cout << "x = " << y << '\n';
 
     return 0;
 }
