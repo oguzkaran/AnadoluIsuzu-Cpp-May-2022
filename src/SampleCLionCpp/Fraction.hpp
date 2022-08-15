@@ -22,7 +22,7 @@ namespace org::csystem::math {
     private:
         int m_a{}, m_b{};
     private:
-        void set(int a, int b);
+        static void set(Fraction &f,  int a, int b);
     public:
         Fraction() : m_a{}, m_b{1}
         {}

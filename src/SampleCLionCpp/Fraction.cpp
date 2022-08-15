@@ -11,7 +11,9 @@
     All Rights Free
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <stdexcept>
+#include <string>
 #include <cmath>
+
 #include "Fraction.hpp"
 
 namespace org::csystem::math {
@@ -38,28 +40,46 @@ namespace org::csystem::math {
         }
     }
 
-    void Fraction::set(int a, int b)
+    std::ostream &operator<<(std::ostream &os, const Fraction &f)
+    {
+        return os << f.m_a << (f.m_b == 1 ? "" : " / " + std::to_string(f.m_b) + " = " + std::to_string(f.realValue()));
+    }
+
+    std::istream &operator>>(std::istream &is, Fraction &f)
+    {
+        int a, b;
+        is >> a >> b;
+
+        check(a, b);
+        Fraction::set(f, a, b);
+
+        return is;
+    }
+
+    void Fraction::set(Fraction &f,  int a, int b)
     {
         if (a == 0) {
-            m_a = 0;
-            m_b = 1;
+            f.m_a = 0;
+            f.m_b = 1;
             return;
         }
 
-        if (m_b < 0) {
-            m_a = -m_a;
-            m_b = -m_b;
+        f.m_a = a;
+        f.m_b = b;
+        if (f.m_b < 0) {
+            f.m_a = -f.m_a;
+            f.m_b = -f.m_b;
         }
-        auto gcdVal{gcd(std::abs(m_a), m_b)};
+        auto gcdVal{gcd(std::abs(f.m_a), f.m_b)};
 
-        m_a /= gcdVal;
-        m_b /= gcdVal;
+        f.m_a /= gcdVal;
+        f.m_b /= gcdVal;
     }
 
     Fraction::Fraction(int a, int b)
     {
         check(a, b);
-        set(a, b);
+        set(*this, a, b);
     }
 
     void Fraction::numerator(int a)
@@ -67,7 +87,7 @@ namespace org::csystem::math {
         if (a == m_a)
             return;
 
-        set(a, m_b);
+        set(*this, a, m_b);
     }
 
     void Fraction::denominator(int b)
@@ -76,6 +96,35 @@ namespace org::csystem::math {
             return;
 
         check(m_a, b);
-        set(m_a, b);
+        set(*this, m_a, b);
+    }
+
+    Fraction &Fraction::operator++()
+    {
+        m_a += m_b;
+
+        return *this;
+    }
+
+    Fraction Fraction::operator++(int)
+    {
+        m_a += m_b;
+
+        return Fraction{m_a - m_b, m_b};
+    }
+
+
+    Fraction &Fraction::operator--()
+    {
+        m_a -= m_b;
+
+        return *this;
+    }
+
+    Fraction Fraction::operator--(int)
+    {
+        m_a -= m_b;
+
+        return Fraction{m_a + m_b, m_b};
     }
 }
