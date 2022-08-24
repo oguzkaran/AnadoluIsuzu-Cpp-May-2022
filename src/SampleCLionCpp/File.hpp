@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : File.hpp
     Author          : Oğuz Karan
-    Last Update     : 15th Aug 2022
+    Last Update     : 24th Aug 2022
     Platform        : All
     Version         : 2.0.0
 
@@ -23,7 +23,6 @@ namespace org::csystem::io::file {
 
     class File {
         friend std::ostream &operator<<(std::ostream &os, const File &f);
-
     private:
         std::FILE *m_f;
     public:
@@ -60,6 +59,8 @@ namespace org::csystem::io::file {
         File &operator<<(const char *str);
         //TODO: std::size_t write(const void *buf, std::size_t size, std::size_t count);
         //TODO: std::size_t read(void *buf, std::size_t size, std::size_t count);
+
+        void swap(File &other);
     };
 
 #endif //FILE_HPP_

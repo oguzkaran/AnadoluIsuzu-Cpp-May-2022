@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : File.cpp
     Author          : Oğuz Karan
-    Last Update     : 15th Aug 2022
+    Last Update     : 24th Aug 2022
     Platform        : All
     Version         : 2.0.0
 
@@ -11,7 +11,6 @@
     All Rights Free
 ----------------------------------------------------------------------------------------------------------------------*/
 #include "File.hpp"
-
 
 namespace org::csystem::io::file {
 
@@ -110,5 +109,12 @@ namespace org::csystem::io::file {
     {
         write(str);
         return *this;
+    }
+
+    void File::swap(File &other)
+    {
+        auto temp{m_f};
+        m_f = other.m_f;
+        other.m_f = temp;
     }
 }
