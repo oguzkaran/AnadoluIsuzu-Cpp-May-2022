@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.hpp
     Author          : Oğuz Karan
-    Last Update     : 27th Jul 2022
+    Last Update     : 25th Aug 2022
     Platform        : All
     Version         : 5.0.0
 
@@ -17,6 +17,8 @@
 
 namespace org::csystem::math::geometry {
     class Point {
+        template <std::size_t I>
+        friend double get(const Point &p);
         friend std::ostream &operator<<(std::ostream &os, const Point &p);
         friend std::istream &operator>>(std::istream &is, Point &p);
     private:
@@ -24,6 +26,8 @@ namespace org::csystem::math::geometry {
     private:
         explicit Point(double x, double y, bool cartesian);
     public:
+        constexpr static std::size_t X = 0;
+        constexpr static std::size_t Y = 1;
         static Point createCartesian(double x, double y);
         static Point createPolar(double r, double theta);
     public:
@@ -49,6 +53,18 @@ namespace org::csystem::math::geometry {
 
         double distance(double a, double b) const;
     };
+
+    template <std::size_t I>
+    double get(const Point &p)
+    {
+        if (I != 0 && I != 1)
+            throw std::out_of_range{"I must be zero or one"};
+
+        return I == 0 ? p.m_x : p.m_y;
+    }
+
 }
+
+
 
 #endif //POINT_HPP_

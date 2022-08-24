@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Point.cpp
     Author          : Oğuz Karan
-    Last Update     : 27th Jul 2022
+    Last Update     : 24th Aug 2022
     Platform        : All
     Version         : 5.0.0
 
@@ -13,10 +13,10 @@
 #include "Point.hpp"
 
 #include <iostream>
+#include <stdexcept>
 #include <cmath>
 
 namespace org::csystem::math::geometry {
-
     std::ostream &operator<<(std::ostream &os, const Point &p)
     {
         return os << "(" << p.m_x << ", " << p.m_y << ")";
@@ -27,7 +27,7 @@ namespace org::csystem::math::geometry {
         return is >> p.m_x >> p.m_y;
     }
 
-    Point::Point(double x, double y, bool cartesian) : m_x{cartesian ? x : x * std::cos(y)}, m_y{cartesian ? x : x * std::sin(y)}
+    Point::Point(double x, double y, bool cartesian) : m_x{cartesian ? x : x * std::cos(y)}, m_y{cartesian ? y : x * std::sin(y)}
     {
     }
 
