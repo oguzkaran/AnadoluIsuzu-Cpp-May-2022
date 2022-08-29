@@ -1,21 +1,18 @@
 /*----------------------------------------------------------------------------------------------------------------------
-   Point sınıfı ve get friend fonksiyonu
+   Unit sınıfı
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
-#include "Point.hpp"
+#include <string>
+#include "Unit.hpp"
 
 int main()
 {
     using namespace std;
-    using org::csystem::math::geometry::Point;
-    using org::csystem::math::geometry::get;
+    using org::csystem::util::Unit;
 
-    auto p{Point::createCartesian(100, 200)};
+    basic_string<char> s;
+    string s1;
 
-    cout << get<0>(p) << '\n';
-    cout << get<1>(p) << '\n';
-    cout << get<Point::X>(p) << '\n';
-    cout << get<Point::Y>(p) << '\n';
 
     return 0;
 }
