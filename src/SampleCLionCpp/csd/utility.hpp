@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utility.hpp
 	Author		: Oğuz Karan
-	Last Update	: 04.07.2022
+	Last Update	: 01.09.2022
 	Platform	: All
 
 	Header file for utility functions and types
@@ -134,7 +134,7 @@ namespace org::csystem::util::container {
 
 namespace org::csystem::util::algorithm {
     template<std::size_t N, typename RandIt>
-    void myShuffle(RandIt first, RandIt last)
+    void csdShuffle(RandIt first, RandIt last)
     {
         using org::csystem::util::random::randomInt;
 
@@ -253,7 +253,7 @@ namespace org::csystem::util::arr {
 	}
 
 	template <typename T, std::size_t size>
-	void display(const std::array<T, size>& a)
+	void write(const std::array<T, size>& a)
 	{
 		for (const auto& r : a)
 			std::cout << r << ' ';
