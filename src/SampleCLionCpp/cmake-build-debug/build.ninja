@@ -201,6 +201,14 @@ build CMakeFiles\sample.dir\datetimeutil.c.obj: C_COMPILER__sample_Debug C$:\Use
   TARGET_COMPILE_PDB = CMakeFiles\sample.dir\
   TARGET_PDB = sample.pdb
 
+build CMakeFiles\sample.dir\game\Card.cpp.obj: CXX_COMPILER__sample_Debug C$:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleCLionCpp\game\Card.cpp || cmake_object_order_depends_target_sample
+  DEFINES = -D_CRT_SECURE_NO_WARNINGS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\sample.dir\game
+  TARGET_COMPILE_PDB = CMakeFiles\sample.dir\
+  TARGET_PDB = sample.pdb
+
 build CMakeFiles\sample.dir\main.cpp.obj: CXX_COMPILER__sample_Debug C$:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleCLionCpp\main.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
@@ -273,7 +281,7 @@ build CMakeFiles\sample.dir\utility.cpp.obj: CXX_COMPILER__sample_Debug C$:\User
 #############################################
 # Link the executable sample.exe
 
-build sample.exe: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles\sample.dir\AlertDialog.cpp.obj CMakeFiles\sample.dir\AnalyticalCircle.cpp.obj CMakeFiles\sample.dir\Circle.cpp.obj CMakeFiles\sample.dir\Complex.cpp.obj CMakeFiles\sample.dir\Date.cpp.obj CMakeFiles\sample.dir\File.cpp.obj CMakeFiles\sample.dir\Fraction.cpp.obj CMakeFiles\sample.dir\Point.cpp.obj CMakeFiles\sample.dir\Sensor.cpp.obj CMakeFiles\sample.dir\company\Employee.cpp.obj CMakeFiles\sample.dir\company\HumanResources.cpp.obj CMakeFiles\sample.dir\company\Manager.cpp.obj CMakeFiles\sample.dir\company\SalesManager.cpp.obj CMakeFiles\sample.dir\company\Worker.cpp.obj CMakeFiles\sample.dir\company\companyApp.cpp.obj CMakeFiles\sample.dir\csderrorutil.c.obj CMakeFiles\sample.dir\csdnumeric.cpp.obj CMakeFiles\sample.dir\csdutil.c.obj CMakeFiles\sample.dir\datetimeutil.c.obj CMakeFiles\sample.dir\main.cpp.obj CMakeFiles\sample.dir\parser\FileSource.cpp.obj CMakeFiles\sample.dir\parser\FindAlphabeticCountResetParser.cpp.obj CMakeFiles\sample.dir\parser\FindDigitsCountParser.cpp.obj CMakeFiles\sample.dir\parser\StdInSource.cpp.obj CMakeFiles\sample.dir\parser\StringSource.cpp.obj CMakeFiles\sample.dir\parser\alphabeticcountapp.cpp.obj CMakeFiles\sample.dir\utility.cpp.obj
+build sample.exe: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles\sample.dir\AlertDialog.cpp.obj CMakeFiles\sample.dir\AnalyticalCircle.cpp.obj CMakeFiles\sample.dir\Circle.cpp.obj CMakeFiles\sample.dir\Complex.cpp.obj CMakeFiles\sample.dir\Date.cpp.obj CMakeFiles\sample.dir\File.cpp.obj CMakeFiles\sample.dir\Fraction.cpp.obj CMakeFiles\sample.dir\Point.cpp.obj CMakeFiles\sample.dir\Sensor.cpp.obj CMakeFiles\sample.dir\company\Employee.cpp.obj CMakeFiles\sample.dir\company\HumanResources.cpp.obj CMakeFiles\sample.dir\company\Manager.cpp.obj CMakeFiles\sample.dir\company\SalesManager.cpp.obj CMakeFiles\sample.dir\company\Worker.cpp.obj CMakeFiles\sample.dir\company\companyApp.cpp.obj CMakeFiles\sample.dir\csderrorutil.c.obj CMakeFiles\sample.dir\csdnumeric.cpp.obj CMakeFiles\sample.dir\csdutil.c.obj CMakeFiles\sample.dir\datetimeutil.c.obj CMakeFiles\sample.dir\game\Card.cpp.obj CMakeFiles\sample.dir\main.cpp.obj CMakeFiles\sample.dir\parser\FileSource.cpp.obj CMakeFiles\sample.dir\parser\FindAlphabeticCountResetParser.cpp.obj CMakeFiles\sample.dir\parser\FindDigitsCountParser.cpp.obj CMakeFiles\sample.dir\parser\StdInSource.cpp.obj CMakeFiles\sample.dir\parser\StringSource.cpp.obj CMakeFiles\sample.dir\parser\alphabeticcountapp.cpp.obj CMakeFiles\sample.dir\utility.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
