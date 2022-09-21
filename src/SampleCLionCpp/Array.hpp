@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Array.hpp
     Author          : Anadolu Isuzu Software Group
-    Last Update     : 1st Sep 2022
+    Last Update     : 21st Sep 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 2.1.0
 
     Array class
 
@@ -16,6 +16,8 @@
 #include <string>
 #include <stdexcept>
 #include <cstddef>
+#include <cstring>
+#include <initializer_list>
 
 namespace com::anodoluisuzu::util::container {
     template<typename T, std::size_t N>
@@ -33,7 +35,7 @@ namespace com::anodoluisuzu::util::container {
 
     public:
         constexpr Array() = default;
-
+        constexpr Array(std::initializer_list<T> ilist);
         constexpr size_type size() const { return N; }
 
     public:
@@ -52,6 +54,20 @@ namespace com::anodoluisuzu::util::container {
     {
         if (pos >= N)
             throw std::out_of_range{"pos out range:" + std::to_string(pos)};
+    }
+
+    template <typename T, std::size_t N>
+    constexpr Array<T, N>::Array(std::initializer_list<T> ilist)
+    {
+        if (ilist.size() > N) //Şimdilik bu şekilde yazdık
+            throw std::out_of_range {"Too many initializers"};
+
+        size_type  index{};
+
+        std::memset(m_t, T{}, sizeof(T) * N);
+
+        for (const auto &val : ilist)
+            m_t[index++] = val;
     }
 
     template<typename T, std::size_t N>
