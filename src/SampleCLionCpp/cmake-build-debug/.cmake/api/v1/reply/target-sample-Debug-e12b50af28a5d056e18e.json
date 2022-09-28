@@ -48,7 +48,7 @@
 					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd"
 				},
 				{
-					"fragment" : "-std:c++20"
+					"fragment" : "-std:c++17"
 				}
 			],
 			"defines" : 
@@ -65,7 +65,7 @@
 				[
 					1
 				],
-				"standard" : "20"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[

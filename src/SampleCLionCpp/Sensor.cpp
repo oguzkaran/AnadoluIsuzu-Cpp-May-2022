@@ -2,6 +2,12 @@
 #include "Sensor.hpp"
 
 namespace AnadoluIsuzu {
+
+    std::ostream &operator<<(std::ostream &os, const Sensor &s)
+    {
+        return os << s.m_name << ", " << s.m_host << "," << s.m_port << ", " << (s.m_open ? "Open" : "Closed");
+    }
+
     std::size_t Sensor::ms_count;
 
     Sensor::Sensor(const char *name, const char *host, std::uint16_t port, bool open)

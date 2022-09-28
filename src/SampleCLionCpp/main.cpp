@@ -1,84 +1,46 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Yukarıdaki örnek aşağıdaki gibi "Lambda ifadeleri (lambda expressions)" kullanılarak yazılabilir. Lambda ifadeleri
-    C++11 ile dile katılmış ve her standartta ayrı özellikler eklenmiştir. Lambda ifadeleri bir closure belirtir. Yani
-    aslında derleyici lambda ifadesini gördüğünde uygun bir "functor" yazar. Aşağıdaki örnekte generate_n algoritmasında
-    verilen lambda ifadesi için derleyici yaklaşık olarak aşağıdaki gibi bir sınıf yazar:
-        class xyz_ {
-        public:
-            std::string operator()() const
-            {
-                using org::csystem::util::random::randomString;
-                using org::csystem::util::random::randomInt;
-
-                return randomString(randomInt(5, 10));
-            }
-
-        };
-
-    generate_n çağrısı da yaklaşık olarak şu şekilde yapılır:
-        generate_n(back_inserter(texts), count, xyz_{});
-    for_each algoritmasında verilen lambda ifadesi için derleyici yaklaşık olarak aşağıdaki gibi bir sınıf yazar:
-
-        class abc_ {
-        public:
-            void operator()(const std::string &s) const
-            {
-                std::cout << s << ' ';
-            }
-        };
-    for_each çağrısı da yaklaşık olarak şu şekilde yapılır:
-        for_each(begin(texts), end(texts), abc_{});
-
-    copy_if algoritmasında verilen lambda ifadesi için derleyici yaklaşık olarak aşağıdaki gibi bir sınıf yazar:
-        class tuv_ {
-        private:
-            int m_threshold;
-        public:
-            tuv_(int threshold) : m_threshold{threshold}
-            {}
-            bool operator()(const std::string &s) const
-            {
-                return s.length() > m_threshold;
-            }
-        };
-     copy_if çağrısı da yaklaşık olarak şu şekilde yapılır:
-        copy_if(begin(texts), end(texts), front_inserter(result), tuv_{threshold});
+    Yukarıdaki writeReverse fonksiyonu aşağıdaki gibi reverse iterator kullanılarak ve daha etkin bir biçimde tanımlanabilir.
+    Yukarıdaki örnekte fonksiyon stack kullanımını göstermek için yazılmıştır
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
-#include <list>
 #include <vector>
+#include <list>
+#include <deque>
 #include <string>
 #include <algorithm>
-#include <iterator>
-#include "csd/utility.hpp"
+#include <numeric>
+
+template <typename T, typename Container>
+void writeReverse(const Container &c, const std::string &sep = "", char end = '\n', std::ostream &os = std::cout)
+{
+    using namespace std;
+
+    for_each(rbegin(c), rend(c), [&os, sep](const auto &e) {os << e << sep;});
+
+    os << end;
+}
+
 
 int main()
 {
     using namespace std;
-    using org::csystem::util::random::randomString;
-    using org::csystem::util::random::randomInt;
 
-    vector<string> texts;
-    list<string> result;
+    vector<int> iVec(26);
+    list<int> iList(26);
+    deque<int> iDeq(26);
+    string str(26, ' ');
 
-    int count, threshold;
+    iota(begin(iVec), end(iVec), 0);
+    iota(begin(iList), end(iList), 0);
+    iota(begin(iDeq), end(iDeq), 0);
+    iota(begin(str), end(str), 'A');
 
-    cout << "Input threshold and count:";
-    cout.flush();
-    cin >> threshold >> count;
-
-    generate_n(back_inserter(texts), count, []{return randomString(randomInt(5, 10));});
-
-    auto f = [](const auto &s) {cout << s << ' ';};
-
-    for_each(begin(texts), end(texts), f);
-    cout << '\n';
-
-    copy_if(begin(texts), end(texts), front_inserter(result), [threshold](const auto &s) {return s.length() > threshold;});
-
-    for_each(begin(result), end(result), f);
-    cout << '\n';
+    writeReverse<int>(iVec, " ");
+    writeReverse<int>(iList, " ");
+    writeReverse<int>(iDeq,  " ");
+    writeReverse<char>(str);
 
     return 0;
 }
+
 

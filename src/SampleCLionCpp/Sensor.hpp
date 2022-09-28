@@ -1,13 +1,14 @@
 #ifndef SENSOR_HPP_
 #define SENSOR_HPP_
 
+#include <iostream>
 #include <string>
 #include <cstdint>
 #include <cstddef>
 
 namespace AnadoluIsuzu {
-
     class Sensor {
+        friend std::ostream &operator<<(std::ostream &os, const Sensor &s);
     private:
         static std::size_t ms_count;
         std::string m_name;
