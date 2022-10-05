@@ -1,46 +1,42 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Yukarıdaki writeReverse fonksiyonu aşağıdaki gibi reverse iterator kullanılarak ve daha etkin bir biçimde tanımlanabilir.
-    Yukarıdaki örnekte fonksiyon stack kullanımını göstermek için yazılmıştır
+    Aşağıdaki örneği inceleyiniz
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
+#include <fstream>
 #include <vector>
-#include <list>
-#include <deque>
-#include <string>
 #include <algorithm>
-#include <numeric>
+#include <iterator>
+#include "csd/utility.hpp"
+#include "Point.hpp"
 
-template <typename T, typename Container>
-void writeReverse(const Container &c, const std::string &sep = "", char end = '\n', std::ostream &os = std::cout)
+auto createRandomPoint(double min, double max)
 {
-    using namespace std;
+    using org::csystem::math::geometry::Point;
+    using org::csystem::util::random::randomDouble;
 
-    for_each(rbegin(c), rend(c), [&os, sep](const auto &e) {os << e << sep;});
-
-    os << end;
+    return Point::createCartesian(randomDouble(min, max), randomDouble(min, max));
 }
 
+auto createRandomPoints(std::size_t count, double min, double max)
+{
+    using org::csystem::math::geometry::Point;
+    using namespace std;
+
+    vector<Point> points;
+
+    generate_n(back_inserter(points), count, [min, max]{return createRandomPoint(min, max);});
+
+    return points;
+}
 
 int main()
 {
     using namespace std;
+    using org::csystem::math::geometry::Point;
 
-    vector<int> iVec(26);
-    list<int> iList(26);
-    deque<int> iDeq(26);
-    string str(26, ' ');
+    auto points{createRandomPoints(10, -100, 100)};
 
-    iota(begin(iVec), end(iVec), 0);
-    iota(begin(iList), end(iList), 0);
-    iota(begin(iDeq), end(iDeq), 0);
-    iota(begin(str), end(str), 'A');
-
-    writeReverse<int>(iVec, " ");
-    writeReverse<int>(iList, " ");
-    writeReverse<int>(iDeq,  " ");
-    writeReverse<char>(str);
+    copy(begin(points), end(points), ostream_iterator<Point>(cout, "\n"));
 
     return 0;
 }
-
-
