@@ -3,7 +3,7 @@
     Author          : Oğuz Karan
     Last Update     : 24th Aug 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 3.0.0
 
     Implementation file for File class that is used for file operations
 
@@ -11,72 +11,46 @@
     All Rights Free
 ----------------------------------------------------------------------------------------------------------------------*/
 #include "File.hpp"
+#include <array>
 
 namespace org::csystem::io::file {
 
-    static int g_whence[] = {SEEK_SET, SEEK_CUR, SEEK_END};
-
-
-    static inline void closeFileIfOpen(std::FILE *f)
-    {
-        if (f)
-            std::fclose(f);
-    }
+    static std::array<int, 3> g_whence = {SEEK_SET, SEEK_CUR, SEEK_END};
+    static auto deleter = [](FILE *f) {if (f) std::fclose(f);};
 
     std::ostream &operator<<(std::ostream &os, const File &f)
     {
-        if (!f.m_f)
+        if (!f.m_up.get())
             return os;
 
         int c;
 
-        while ((c = std::fgetc(f.m_f)) != EOF)
+        while ((c = std::fgetc(f.m_up.get())) != EOF)
             os << static_cast<char>(c);
 
         return os;
     }
 
-    File::File(File &&r) noexcept : m_f{r.m_f}
-    {
-        r.m_f = nullptr;
-    }
-
-    File &File::operator=(File &&r) noexcept
-    {
-        if (this == &r)
-            return *this;
-
-        closeFileIfOpen(m_f);
-        m_f = r.m_f;
-        r.m_f = nullptr;
-
-        return *this;
-    }
-
-
-    File::~File()
-    {
-        closeFileIfOpen(m_f);
-    }
-
     bool File::open(const char *name, const char *mode, bool closeIfOpen)
     {
-        if (!closeIfOpen && m_f)
+        if (!closeIfOpen && m_up.get())
             return false;
 
-        closeFileIfOpen(m_f);
+        m_up.reset();
+        auto f = std::fopen(name, mode);
+        m_up = Uptrf{f, deleter};
 
-        return (m_f = std::fopen(name, mode)) != nullptr;
+        return f != nullptr;
     }
 
     void File::close()
     {
-        closeFileIfOpen(m_f);
+        m_up.reset();
     }
 
     int File::seek(long offset, Whence whence)
     {
-        return std::fseek(m_f, offset, static_cast<int>(whence));
+        return std::fseek(m_up.get(), offset, static_cast<int>(whence));
     }
 
     int File::seekSet()
@@ -89,20 +63,20 @@ namespace org::csystem::io::file {
         return seek(0, Whence::SeekEnd);
     }
 
-    int File::getc()
+    int File::read()
     {
-        return std::fgetc(m_f);
+        return std::fgetc(m_up.get());
     }
 
-    int File::putc(int ch)
+    int File::write(int ch)
     {
-        return std::fputc(ch, m_f);
+        return std::fputc(ch, m_up.get());
     }
 
     void File::write(const char *str)
     {
         for (int i{}; str[i] != '\0'; ++i)
-            std::fputc(str[i], m_f);
+            std::fputc(str[i], m_up.get());
     }
 
     File &File::operator<<(const char *str)
@@ -113,8 +87,6 @@ namespace org::csystem::io::file {
 
     void File::swap(File &other)
     {
-        auto temp{m_f};
-        m_f = other.m_f;
-        other.m_f = temp;
+        m_up.swap(other.m_up);
     }
 }

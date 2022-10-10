@@ -3,7 +3,7 @@
     Author          : Oğuz Karan
     Last Update     : 24th Aug 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 3.0.0
 
     Header file for File class that is used for file operations
 
@@ -15,8 +15,12 @@
 
 #include <iostream>
 #include <cstdio>
+#include <memory>
+#include <functional>
 
 namespace org::csystem::io::file {
+    using Uptrf = std::unique_ptr<std::FILE, std::function<void(FILE *)>>;
+
     enum class Whence {
         SeekSet, SeekCur, SeekEnd
     };
@@ -24,44 +28,24 @@ namespace org::csystem::io::file {
     class File {
         friend std::ostream &operator<<(std::ostream &os, const File &f);
     private:
-        std::FILE *m_f;
+        Uptrf m_up;
     public:
-        File() : m_f{}
+        File() : m_up{}
         {}
-
-        File(const File &) = delete;
-
-        File &operator=(const File &) = delete;
-
-        File(File &&r) noexcept;
-
-        File &operator=(File &&r) noexcept;
-
-        ~File();
-
     public:
-        bool open(const char *name, const char *mode, bool closeIfOpen = true);
-
+        [[nodiscard]] bool open(const char *name, const char *mode, bool closeIfOpen = true);
         void close();
-
         int seek(long offset, Whence whence);
-
         int seekSet();
-
         int seekEnd();
-
-        int getc();
-
-        int putc(int ch);
-
+        int read();
+        int write(int ch);
         void write(const char *str);
-
         File &operator<<(const char *str);
+        void swap(File &other);
         //TODO: std::size_t write(const void *buf, std::size_t size, std::size_t count);
         //TODO: std::size_t read(void *buf, std::size_t size, std::size_t count);
-
-        void swap(File &other);
     };
+}
 
 #endif //FILE_HPP_
-}

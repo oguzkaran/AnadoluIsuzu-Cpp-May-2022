@@ -65,6 +65,4 @@ namespace org::csystem::math::geometry {
 
 }
 
-
-
 #endif //POINT_HPP_

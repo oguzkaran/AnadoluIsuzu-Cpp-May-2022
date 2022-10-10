@@ -39,29 +39,21 @@ namespace org::csystem::math {
         {}
 
     public:
-        constexpr double real() const
-        { return m_real; }
+        constexpr double real() const { return m_real; }
 
-        constexpr void real(double value)
-        { m_real = value; }
+        constexpr void real(double value) { m_real = value; }
 
-        constexpr double imag() const
-        { return m_imag; }
+        constexpr double imag() const { return m_imag; }
 
-        constexpr void imag(double value)
-        { m_imag = value; }
+        constexpr void imag(double value) { m_imag = value; }
 
-        double norm() const
-        { return std::sqrt(m_real * m_real + m_imag * m_imag); }
+        double norm() const { return std::sqrt(m_real * m_real + m_imag * m_imag); }
 
-        double length() const
-        { return norm(); }
+        double length() const { return norm(); }
 
-        double delta() const
-        { return m_delta; }
+        double delta() const { return m_delta; }
 
-        void delta(double value)
-        { m_delta = value; }
+        void delta(double value) { m_delta = value; }
 
     public:
         Complex operator+(const Complex &other) const;

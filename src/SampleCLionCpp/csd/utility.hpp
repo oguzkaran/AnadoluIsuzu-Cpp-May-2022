@@ -49,11 +49,11 @@ namespace org::csystem::util::random {
         [[nodiscard]] unsigned char randomChar();
 
 		[[nodiscard]]
-		[[deprecated("use randomDouble function")]]
+		[[deprecated("use randomDouble function instead")]]
 		double drand(double min = 0, double max = 1);
 		
 		[[nodiscard]]
-		[[deprecated("use randomInt function")]]
+		[[deprecated("use randomInt function instead")]]
 		int irand(int min = 0, int max = RAND_MAX);
 	}
 }

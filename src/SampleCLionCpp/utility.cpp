@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utililty.cpp
 	Author		: Oğuz Karan, Anadolu Isuzu
-	Last Update	: 04.07.2022
+	Last Update	: 10.10.2022
 	Platform	: All
 
 	Implementation file for utility functions and types
@@ -61,7 +61,7 @@ namespace org::csystem::util::random {
 		}
 
 
-        [[nodiscard]] unsigned char randomChar()
+        unsigned char randomChar()
         {
             return static_cast<char>(randomInt(0, 25) + (randomBool() ? 'A' : 'a'));
         }
