@@ -97,24 +97,8 @@ namespace org::csystem::util::str {
 	}
 }
 
-namespace org::csystem::util::convert {	
-	std::optional<int> toint(const std::string &s, int base)
-	{
-		try {
-			std::size_t pos;
-			auto result = std::stoi(s, &pos, base);
-
-			if (pos != s.length())
-				return std::nullopt;
-
-			return result;
-		}
-		catch (...) {
-			return std::nullopt;
-		}
-	}
-
-    std::optional<int> toInt(const std::string &s, int base)
+namespace org::csystem::util::convert {
+	std::optional<int> toInt(const std::string &s, int base)
     {
         try {
             std::size_t pos;
