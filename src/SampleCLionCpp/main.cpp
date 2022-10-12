@@ -1,40 +1,33 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    optional sınıfı C++17 ile eklenmiştir. Sınıfın amacı bir değerin var olup olmadığının test edilip varsa kullanılmasıdır.
-    Aşağıdaki örneği inceleyiniz
+    Aşağıdaki örnekte optinal sınıfı bir veri elemanı olarak kullanılmıştır
 ----------------------------------------------------------------------------------------------------------------------*/
 #include <iostream>
-#include <optional>
+#include <string>
 #include "csd/utility.hpp"
 
+class Person {
+private:
+    std::string m_firstName;
+    std::optional<std::string> m_middleName;
+    std::string m_familyName;
+public:
+    Person(std::string firstName, std::optional<std::string> middleName, std::string familyName)
+        : m_firstName{std::move(firstName)}, m_middleName{std::move(middleName)}, m_familyName{std::move(familyName)}
+    {}
 
-std::optional<int> getValueByThreshold(int min, int max, int threshold)
-{
-    using org::csystem::util::random::randomInt;
+    Person(std::string firstName, std::string familyName) : Person{std::move(firstName), std::nullopt, std::move(familyName)}
+    {}
 
-    auto val{randomInt(min, max)};
 
-    return val < threshold ? std::make_optional(val) : std::nullopt;
-}
+    //...
+
+};
 
 int main()
 {
     using namespace std;
-
-    int count;
-
-    cout << "Input count:";
-    cout.flush();
-    cin >> count;
-
-    for (int i{}; i < count; ++i) {
-        cout << "-----------------------------------------------\n";
-        if (auto result = getValueByThreshold(0, 20, 15); result)
-            cout << result*ğ--p
-
-        cout << "-----------------------------------------------\n";
-    }
-
-
+    Person p1{"Oguz", "Karan"};
+    Person p2{"Ali", "Vefa", "Serce"};
 
     return 0;
 }
