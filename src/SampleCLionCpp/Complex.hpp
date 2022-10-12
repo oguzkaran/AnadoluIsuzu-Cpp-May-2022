@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Complex.hpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 12th Oct 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 2.1.0
 
     Header file for Complex class
 
@@ -39,19 +39,19 @@ namespace org::csystem::math {
         {}
 
     public:
-        constexpr double real() const { return m_real; }
+        [[nodiscard]] constexpr double real() const { return m_real; }
 
         constexpr void real(double value) { m_real = value; }
 
-        constexpr double imag() const { return m_imag; }
+        [[nodiscard]] constexpr double imag() const { return m_imag; }
 
         constexpr void imag(double value) { m_imag = value; }
 
-        double norm() const { return std::sqrt(m_real * m_real + m_imag * m_imag); }
+        [[nodiscard]] double norm() const { return std::sqrt(m_real * m_real + m_imag * m_imag); }
 
-        double length() const { return norm(); }
+        [[nodiscard]] double length() const { return norm(); }
 
-        double delta() const { return m_delta; }
+        [[nodiscard]] double delta() const { return m_delta; }
 
         void delta(double value) { m_delta = value; }
 

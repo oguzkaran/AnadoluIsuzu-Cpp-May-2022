@@ -28,30 +28,30 @@ namespace org::csystem::math::geometry {
     public:
         constexpr static std::size_t X = 0;
         constexpr static std::size_t Y = 1;
-        static Point createCartesian(double x, double y);
-        static Point createPolar(double r, double theta);
+        [[nodiscard]] static Point createCartesian(double x, double y);
+        [[nodiscard]] static Point createPolar(double r, double theta);
     public:
         double &x()
         { return m_x; }
 
-        double x() const
+        [[nodiscard]] double x() const
         { return m_x; }
 
         double &y()
         { return m_y; }
 
-        double y() const
+        [[nodiscard]] double y() const
         { return m_y; }
 
         void offset(double dx, double dy);
 
         void offset(double dxy);
 
-        double distance() const;
+        [[nodiscard]] double distance() const;
 
-        double distance(const Point &other) const;
+        [[nodiscard]] double distance(const Point &other) const;
 
-        double distance(double a, double b) const;
+        [[nodiscard]] double distance(double a, double b) const;
     };
 
     template <std::size_t I>

@@ -36,14 +36,14 @@ namespace com::isuzu::math::geometry {
         AnalyticalCircle(double r, double x, double y) : Circle{r}, m_center{csdgeo::Point::createCartesian(x, y)}
         {}
     public:
-        double x() const {return m_center.x();}
+        [[nodiscard]] double x() const {return m_center.x();}
         void x(double x);
-        double y() const {return m_center.y();}
+        [[nodiscard]] double y() const {return m_center.y();}
         void y(double y);
         void offset(double dx, double dy);
         void offset(double dxy);
-        //bool intersects(const AnalyticalCircle &other) const;
-        //bool isTangent(const AnalyticalCircle &other) const;
+        //[[nodiscard]] bool intersects(const AnalyticalCircle &other) const;
+        //[[nodiscard]] bool isTangent(const AnalyticalCircle &other) const;
         //...
     };
 }

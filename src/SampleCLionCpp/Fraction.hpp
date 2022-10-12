@@ -29,11 +29,11 @@ namespace org::csystem::math {
         explicit Fraction(int a, int b = 0);
     public:
         //accessors
-        int numerator() const {return m_a;}
+        [[nodiscard]] int numerator() const {return m_a;}
         void numerator(int a);
-        int denominator() const {return m_b;}
+        [[nodiscard]] int denominator() const {return m_b;}
         void denominator(int b);
-        double realValue() const {return static_cast<double>(m_a) / m_b;}
+        [[nodiscard]] double realValue() const {return static_cast<double>(m_a) / m_b;}
     public:
         //additive operators
         Fraction operator+(const Fraction &other) const;

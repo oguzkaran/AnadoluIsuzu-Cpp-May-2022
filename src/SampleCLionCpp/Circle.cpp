@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Circle.cpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 12th Oct 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 2.1.0
 
     Implementation file for Circle class
 

@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------------------------------------------------
     File Name       : Circle.hpp
     Author          : Oğuz Karan
-    Last Update     : 4th Jul 2022
+    Last Update     : 12th Oct 2022
     Platform        : All
-    Version         : 2.0.0
+    Version         : 2.1.0
 
     Header file for Circle class
 
@@ -28,13 +28,13 @@ namespace org::csystem::math::geometry {
 
         explicit Circle(double r);
 
-        double radius() const
+        [[nodiscard]] double radius() const
         { return m_r; }
 
-        double area() const
+        [[nodiscard]] double area() const
         { return ms_pi * m_r * m_r; }
 
-        double circumference() const
+        [[nodiscard]] double circumference() const
         { return 2 * ms_pi * m_r; }
 
         void setRadius(double r);

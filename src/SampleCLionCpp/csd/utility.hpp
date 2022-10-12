@@ -82,7 +82,6 @@ namespace org::csystem::util {
 		return os << t;
 	}
 
-
 	template <typename T, typename...Ts>
 	std::ostream& write(std::ostream& os, const char* psep, const T& t, const Ts& ...rest)
 	{
