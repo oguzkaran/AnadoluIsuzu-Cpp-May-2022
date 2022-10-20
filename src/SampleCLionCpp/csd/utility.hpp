@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utility.hpp
 	Author		: Oğuz Karan
-	Last Update	: 08.09.2022
+	Last Update	: 20.10.2022
 	Platform	: All
 
 	Header file for utility functions and types
@@ -37,7 +37,9 @@ namespace org::csystem::util::property {
 	};
 
 	using Properties = std::deque<Property>;
-    using PropertyMap = std::map<std::string, Property>;
+
+    template <typename Key = std::string>
+    using PropertyMap = std::map<Key, Property>;
 }
 
 namespace org::csystem::util::random {
