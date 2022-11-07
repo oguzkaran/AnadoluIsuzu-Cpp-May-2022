@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utililty.cpp
 	Author		: Oğuz Karan, Anadolu Isuzu
-	Last Update	: 10.10.2022
+	Last Update	: 10th Oct 2022
 	Platform	: All
 
 	Implementation file for utility functions and types

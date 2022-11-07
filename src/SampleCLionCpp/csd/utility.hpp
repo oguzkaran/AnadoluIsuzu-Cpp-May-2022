@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utility.hpp
 	Author		: Oğuz Karan
-	Last Update	: 20.10.2022
+	Last Update	: 07th Nov.2022
 	Platform	: All
 
 	Header file for utility functions and types
@@ -25,6 +25,69 @@
 #include <any>
 #include <algorithm>
 #include <iterator>
+
+
+template <int index, int n, typename...Args>
+struct WriteTuple {
+    static void write(std::ostream& os, const std::tuple<Args...>& rt)
+    {
+        os << std::get<index>(rt) << (n == index + 1 ? "" : ", ");
+        WriteTuple<index + 1, n, Args...>::write(os, rt);
+    }
+};
+
+template <int n, typename...Args>
+struct WriteTuple<n, n, Args...> {
+    static void write(std::ostream& os, const std::tuple<Args...>& rt)
+    {
+
+    }
+};
+
+template <typename...Args>
+std::ostream& operator <<(std::ostream& os, const std::tuple<Args...>& rt)
+{
+    os << "(";
+    WriteTuple<0, sizeof ...(Args), Args...>::write(os, rt);
+
+    return os << ")";
+}
+
+
+template <typename T, typename U>
+std::ostream& operator<<(std::ostream& os, const std::pair<T, U>& p)
+{
+    return os << "{" << p.first << ", " << p.second << "}";
+}
+
+
+template <typename T, std::size_t N>
+std::ostream& operator<<(std::ostream& os, const std::array<T, N> &a)
+{
+    for (const auto& t : a)
+        os << t << ' ';
+
+    return os;
+}
+
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::list<T> &lst)
+{
+    for (const auto& t : lst)
+        os << t << ' ';
+
+    return os;
+}
+
+
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
+{
+    for (const auto& t : vec)
+        os << t << ' ';
+
+    return os;
+}
 
 namespace org::csystem::util::property {
 	struct Property {
@@ -61,7 +124,7 @@ namespace org::csystem::util::random {
 }
 
 namespace org::csystem::util::str {
-	std::size_t countString(const std::string& s1, const std::string& s2);
+	[[nodiscard]]std::size_t countString(const std::string& s1, const std::string& s2);
 }
 
 namespace org::csystem::util::convert {
@@ -79,13 +142,13 @@ namespace org::csystem::util::numeric {
 
 namespace org::csystem::util {
 	template <typename T>
-	std::ostream& write(std::ostream& os, const char* psep, const T& t)
+	constexpr std::ostream& write(std::ostream& os, const char* psep, const T& t)
 	{
 		return os << t;
 	}
 
 	template <typename T, typename...Ts>
-	std::ostream& write(std::ostream& os, const char* psep, const T& t, const Ts& ...rest)
+	constexpr std::ostream& write(std::ostream& os, const char* psep, const T& t, const Ts& ...rest)
 	{
 		os << t << psep;
 
@@ -98,40 +161,13 @@ namespace org::csystem::util {
 		return t;
 	}
 
-	template <typename T, typename ...Args>
+	template <typename T, typename...Args>
 	constexpr T sum(const T& t, const Args&...args)
 	{
 		return t + sum(args...);
 	}
 }
 
-namespace org::csystem::util::container {
-	template <int index, int n, typename...Args>
-	struct WriteTuple {
-		static void write(std::ostream& os, const std::tuple<Args...>& rt)
-		{
-			os << std::get<index>(rt) << (n == index + 1 ? "" : ", ");
-			WriteTuple<index + 1, n, Args...>::write(os, rt);
-		}
-	};
-
-	template <int n, typename...Args>
-	struct WriteTuple<n, n, Args...> {
-		static void write(std::ostream& os, const std::tuple<Args...>& rt)
-		{
-
-		}
-	};
-
-	template <typename...Args>
-	std::ostream& operator <<(std::ostream& os, const std::tuple<Args...>& rt)
-	{
-		os << "(";
-		WriteTuple<0, sizeof ...(Args), Args...>::write(os, rt);
-
-		return os << ")";
-	}
-}
 
 namespace org::csystem::util::algorithm {
     template<std::size_t N, typename RandIt>
@@ -178,55 +214,9 @@ namespace org::csystem::util::container {
 	}
 }
 
-namespace org::csystem::util::container {
-	template <typename T, typename U>
-	std::ostream& operator<<(std::ostream& os, const std::pair<T, U>& p)
-	{
-		return os << "{" << p.first << ", " << p.second << "}";
-	}	
-}
-
-namespace org::csystem::util::container {
-	template <typename T>
-	std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
-	{
-		for (const auto& t : vec)
-			os << t << ' ';
-
-		return os;
-	}
-}
-
-namespace org::csystem::util::container {
-	template <typename T>
-	std::ostream& operator<<(std::ostream& os, const std::list<T> &lst)
-	{
-		for (const auto& t : lst)
-			os << t << ' ';
-
-		return os;
-	}
-}
-
-namespace org::csystem::util::container {
-	template <typename T, std::size_t N>
-	std::ostream& operator<<(std::ostream& os, const std::array<T, N> &a)
-	{
-		for (const auto& t : a)
-			os << t << ' ';
-
-		return os;
-	}
-}
-
-namespace org::csystem::util::byte::bitwise {
-	std::ostream& operator<<(std::ostream& os, std::byte b);
-	std::istream& operator>>(std::istream& is, std::byte& b);	
-}
-
 namespace org::csystem::util::arr {
 	template <std::size_t size>
-	std::array<int, size> randomIntArray(int min = 0, int max = RAND_MAX)
+	[[nodiscard]]std::array<int, size> randomIntArray(int min = 0, int max = RAND_MAX)
 	{
 		using namespace std;
 		using org::csystem::util::random::randomInt;
@@ -240,7 +230,7 @@ namespace org::csystem::util::arr {
 	}
 
 	template <std::size_t size>
-	std::array<double, size> randomDoubleArray(double min = 0, double max = 1)
+    [[nodiscard]]std::array<double, size> randomDoubleArray(double min = 0, double max = 1)
 	{
 		using namespace std;		
 		array<double, size> a;
@@ -262,6 +252,13 @@ namespace org::csystem::util::arr {
 		std::cout << '\n';
 	}
 }
+
+namespace org::csystem::util::byte::bitwise {
+    std::ostream &operator<<(std::ostream &os, std::byte b);
+
+    std::istream &operator>>(std::istream &is, std::byte &b);
+}
+
 
 namespace org::csystem::util::threading {
 	void sleep(int seconds);
