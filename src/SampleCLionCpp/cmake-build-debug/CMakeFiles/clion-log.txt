@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2019.3.3/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleCLionCpp -B C:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleCLionCpp\cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp -B /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug
 CMake Warning (dev) at CMakeLists.txt:7:
   Syntax Warning in cmake code at column 42
 
@@ -19,4 +19,4 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Karans/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug
+-- Build files have been written to: /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug
