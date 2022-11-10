@@ -6,10 +6,11 @@
 #include <utility>
 #include "csd/utility.hpp"
 
+#include <cstring>
+
 int main()
 {
     using namespace std;
-
 
 
 
