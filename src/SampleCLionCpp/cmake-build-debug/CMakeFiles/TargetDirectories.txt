@@ -1,3 +1,0 @@
-/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug/CMakeFiles/sample.dir
-/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleCLionCpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
