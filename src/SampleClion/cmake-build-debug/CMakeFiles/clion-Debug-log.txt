@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion -B /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2019.3.3/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleClion -B C:\Users\Karans\Dropbox\CSD\Kurslar\AnadoluIsuzu-Cpp-May-2022\src\SampleClion\cmake-build-debug
 CMake Warning (dev) at CMakeLists.txt:7:
   Syntax Warning in cmake code at column 42
 
@@ -17,17 +17,6 @@ CMake Warning (dev) at CMakeLists.txt:7:
   Argument not separated from preceding token by whitespace.
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake:303 (message):
-  Ignoring CMAKE_OSX_SYSROOT value:
-
-   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
-
-  because the directory does not exist.
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake:21 (include)
-  CMakeLists.txt:2 (project)
-
-
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/cmake-build-debug
+-- Build files have been written to: C:/Users/Karans/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/cmake-build-debug
