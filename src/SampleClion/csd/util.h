@@ -1,18 +1,38 @@
 #ifndef CSD_UTIL_H_
 #define CSD_UTIL_H_
 
-#include <stdlib.h>
-#include <time.h>
-#include <stddef.h>
+#ifdef __cplusplus
+    #include <cstddef>
+    #include <cassert>
+#else
+    #include <stddef.h>
+#include <assert.h>
+#endif
 
-#define CSD_RANDOMIZE() srand((unsigned int)time(NULL))
+#ifndef NDEBUG
+    #define CSD_VERIFY(exp) assert(exp)
+#else
+    #define CSD_VERIFY(exp) ((void)(exp))
+#endif
+
+#ifdef __cplusplus
+    #include <cstdlib>
+    #include <ctime>
+
+    #define CSD_RANDOMIZE() std::srand(static_cast<unsigned int>(std::time(nullptr)))
+#else
+    #include <stdlib.h>
+    #include <time.h>
+
+    #define CSD_RANDOMIZE() srand((unsigned int)time(NULL))
+#endif
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 	inline void csd_randomize()
 	{
-		srand((unsigned int)time(NULL));
+		CSD_RANDOMIZE();
 	}
 
 	int csd_random_int(int a, int b);

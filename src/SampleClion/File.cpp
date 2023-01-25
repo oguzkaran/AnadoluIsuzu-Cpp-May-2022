@@ -16,7 +16,10 @@
 namespace org::csystem::io::file {
 
     static std::array<int, 3> g_whence = {SEEK_SET, SEEK_CUR, SEEK_END};
-    static auto deleter = [](FILE *f) {if (f) std::fclose(f);};
+    static auto deleter = [](FILE *f) {
+        if (f)
+            std::fclose(f) == 0;
+    };
 
     std::ostream &operator<<(std::ostream &os, const File &f)
     {

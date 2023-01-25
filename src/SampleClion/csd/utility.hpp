@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------------------------
 	File Name	: utility.hpp
 	Author		: Oğuz Karan
-	Last Update	: 07th Nov.2022
+	Last Update	: 25th Jan 2023
 	Platform	: All
 
 	Header file for utility functions and types
@@ -25,7 +25,13 @@
 #include <any>
 #include <algorithm>
 #include <iterator>
+#include <cassert>
 
+#ifndef NDEBUG
+    #define CSD_VERIFY(exp) assert(exp)
+#else
+    #define CSD_VERIFY(exp) ((void)(exp))
+#endif
 
 template <int index, int n, typename...Args>
 struct WriteTuple {

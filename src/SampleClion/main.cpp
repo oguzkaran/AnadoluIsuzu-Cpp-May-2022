@@ -1,68 +1,48 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Yukarıdaki üretici tüketici probleminin kuyruk kullanılarak çözümü
+    Yazılımda test süreçleri ürün geliştirmenin önemli bir aşamasını oluşturmaktadır. Bazı yazılımlarda yazılımların
+    herşeyiyle doğru olması kritik öneme sahip olabilir. Bazı yazılımların hata toleransı olabilir. Gerektiğinde
+    sonradan düzeltilebilir,
+
+    Eskiden yazılım geliştirmede test süreçleri lüks olarak değerlendiriliyordu. Bu nedenle yazlnızca büyük firmalar
+    test bölümleri barındırıyorlardı. Ancak günümüzde yazılımda kalite (software quality) bilinci çok daha fazla artmış ve
+    test süreçleri çok daha bilinir hale gelmiştir
+
+
 ----------------------------------------------------------------------------------------------------------------------*/
+//#define NDEBUG
+
 #include <iostream>
-#include <thread>
-#include <chrono>
-#include <semaphore>
-#include <array>
+#include <cstdlib>
 #include "csd/utility.hpp"
-
-constexpr std::size_t queue_size = 10;
-std::array<std::size_t, queue_size> g_queue;
-std::size_t g_head, g_tail;
-std::counting_semaphore<queue_size> g_semProducer{queue_size}, g_semConsumer{0};
-
-void producerThreadCallback(std::size_t n)
-{
-    using namespace std;
-    using org::csystem::util::random::randomInt;
-    size_t count{};
-
-    for (;;) {
-        g_semProducer.acquire();
-        g_queue[g_tail++] = count;
-        g_tail %= queue_size;
-        g_semConsumer.release();
-        ++count;
-        this_thread::sleep_for(chrono::microseconds(randomInt(0, 300000)));
-        if (count == 100)
-            break;
-    }
-}
-
-void consumerThreadCallback(std::size_t n)
-{
-    using namespace std;
-    using org::csystem::util::random::randomInt;
-
-    size_t val;
-
-    for (;;) {
-        g_semConsumer.acquire();
-        val = g_queue[g_head++];
-        g_head %= queue_size;
-        g_semProducer.release();
-        cout << val << ' ';
-        cout.flush();
-
-        this_thread::sleep_for(chrono::microseconds(randomInt(0, 300000)));
-        if (val == 99)
-            break;
-    }
-
-    cout << '\n';
-}
+#include "File.hpp"
 
 int main()
 {
     using namespace std;
+    using org::csystem::io::file::File;
 
-    thread t1{producerThreadCallback, 10000};
-    thread t2{consumerThreadCallback, 20000};
+    File f;
 
-    t1.join();
-    t2.join();
+    auto status{f.open("test.dat", "r")};
+
+    if (!status) {
+        cerr << "Can not open file!...\n";
+        std::exit(EXIT_FAILURE);
+    }
+
+    int ch;
+
+    while ((ch = f.read()) != EOF)
+        cout << static_cast<char>(ch);
+
+    cout << '\n';
+
+    CSD_VERIFY(f.seekSet() == 0);
+
+    while ((ch = f.read()) != EOF)
+        cout << static_cast<char>(ch);
+
+    cout << '\n';
 
     return 0;
 }

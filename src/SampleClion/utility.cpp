@@ -60,7 +60,6 @@ namespace org::csystem::util::random {
 			return result;
 		}
 
-
         unsigned char randomChar()
         {
             return static_cast<char>(randomInt(0, 25) + (randomBool() ? 'A' : 'a'));
@@ -74,7 +73,6 @@ namespace org::csystem::util::random {
 			return dist(eng);
 		}
 
-		
 		int irand(int min, int max)
 		{
 			static std::mt19937 eng{ std::random_device{}() };
