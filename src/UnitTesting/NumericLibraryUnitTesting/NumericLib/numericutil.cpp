@@ -1,7 +1,26 @@
+#define DLLEXPORT
+
 #include "numericutil.hpp"
 
-namespace com::anadoluisuzu::util::numeric {	
-	bool isPrime(unsigned long val)
+namespace com::anadoluisuzu::util::numeric {
+	DLLSPEC int getPrime(std::size_t n)
+	{
+		std::size_t count{};
+
+		int val = 2;
+
+		for (;;) {
+			if (isPrime(val))
+				++count;
+
+			if (count == n)
+				return val;
+
+			++val;
+		}		
+	}
+
+	DLLSPEC bool isPrime(unsigned long val)
 	{
 		if (val < 1)
 			return false;

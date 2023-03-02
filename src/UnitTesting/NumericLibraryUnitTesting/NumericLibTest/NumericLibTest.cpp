@@ -65,12 +65,12 @@ namespace NumericLibTest
 
 		BEGIN_TEST_METHOD_ATTRIBUTE(IsPrimeTrueTest1)
 			TEST_METHOD_ATTRIBUTE(L"GROUP", L"Anadolu Isuzu")
-			TEST_OWNER(L"Çaðlar Yalçýn")			
+			TEST_OWNER(L"Ã‡aÄŸlar YalÃ§Ä±n")			
 		END_TEST_METHOD_ATTRIBUTE()			
 		TEST_METHOD(IsPrimeTrueTest1)
 		{
-			using com::anadoluisuzu::util::numeric::isPrime;						
-			using namespace std;
+			using com::anadoluisuzu::util::numeric::isPrime;
+			using namespace std;			
 			
 			for_each(begin(g_trueValues), end(g_trueValues), [](auto val) {Assert::IsTrue(isPrime(val)); });
 		}
@@ -91,7 +91,7 @@ namespace NumericLibTest
 
 		BEGIN_TEST_METHOD_ATTRIBUTE(IsPrimeFalseTest)
 			TEST_METHOD_ATTRIBUTE(L"GROUP", L"CSD")
-			TEST_OWNER(L"Oðuz Karan")
+			TEST_OWNER(L"OÄŸuz Karan")
 		END_TEST_METHOD_ATTRIBUTE()
 		TEST_METHOD(IsPrimeFalseTest)
 		{

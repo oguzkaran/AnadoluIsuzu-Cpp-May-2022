@@ -28,7 +28,6 @@ namespace org::csystem::math {
         {}
         explicit Fraction(int a, int b = 0);
     public:
-        //accessors
         [[nodiscard]] int numerator() const {return m_a;}
         void numerator(int a);
         [[nodiscard]] int denominator() const {return m_b;}
