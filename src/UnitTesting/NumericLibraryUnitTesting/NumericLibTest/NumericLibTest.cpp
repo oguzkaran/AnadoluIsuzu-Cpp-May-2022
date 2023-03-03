@@ -17,7 +17,7 @@ namespace NumericLibTest
 	public:
 		static void loadTrueValues()
 		{
-			std::ifstream ft{ "C:\\primes.txt", std::ios::in };
+			std::ifstream ft{ "primes.txt", std::ios::in };
 
 			Assert::IsTrue(static_cast<bool>(ft));
 			int count;
@@ -38,7 +38,7 @@ namespace NumericLibTest
 
 		static void loadFalseValues()
 		{
-			std::ifstream ff{ "C:\\notprimes.txt", std::ios::in };
+			std::ifstream ff{ "notprimes.txt", std::ios::in };
 
 			Assert::IsTrue(static_cast<bool>(ff));
 			int count;

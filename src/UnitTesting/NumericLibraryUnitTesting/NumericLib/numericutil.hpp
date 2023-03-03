@@ -1,5 +1,5 @@
-#ifndef NUMERIC_UTIL_H_
-#define NUMERIC_UTIL_H_
+#ifndef NUMERIC_UTIL_HPP_
+#define NUMERIC_UTIL_HPP_
 
 #include "common.hpp"
 #include "Point.hpp"
@@ -11,4 +11,4 @@ namespace com::anadoluisuzu::util::numeric {
 	DLLSPEC int getPrime(std::size_t n);
 }
 
-#endif //NUMERIC_UTIL_H_
+#endif //NUMERIC_UTIL_HPP_
