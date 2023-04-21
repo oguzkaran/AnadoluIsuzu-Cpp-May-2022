@@ -52,272 +52,212 @@ build cmake_object_order_depends_target_sample: phony || CMakeFiles/sample.dir
 build CMakeFiles/sample.dir/AlertDialog.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/AlertDialog.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/AlertDialog.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/AnalyticalCircle.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/AnalyticalCircle.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/AnalyticalCircle.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/Circle.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/Circle.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Circle.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/Complex.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/Complex.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Complex.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/File.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/File.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/File.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/Fraction.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/Fraction.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Fraction.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/Point.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/Point.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Point.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/Sensor.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/Sensor.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/Sensor.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/Employee.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/Employee.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/Employee.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/HumanResources.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/HumanResources.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/HumanResources.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/Manager.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/Manager.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/Manager.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/SalesManager.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/SalesManager.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/SalesManager.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/Worker.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/Worker.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/Worker.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/company/companyApp.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/company/companyApp.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/company/companyApp.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/company
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/csderrorutil.c.o: C_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/csderrorutil.c || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/csderrorutil.c.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu11
+  FLAGS = -g -fcolor-diagnostics -std=gnu11
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/csderrorutility.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/csderrorutility.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/csderrorutility.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/csdnumeric.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/csdnumeric.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/csdnumeric.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/csdutil.c.o: C_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/csdutil.c || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/csdutil.c.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu11
+  FLAGS = -g -fcolor-diagnostics -std=gnu11
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/datetimeutil.c.o: C_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/datetimeutil.c || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/datetimeutil.c.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu11
+  FLAGS = -g -fcolor-diagnostics -std=gnu11
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/game/Card.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/game/Card.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/game/Card.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/game
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/main.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/main.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/main.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/mathutility.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/mathutility.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/mathutility.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/FileSource.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/FileSource.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/FileSource.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/FindAlphabeticCountResetParser.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/FindAlphabeticCountResetParser.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/FindAlphabeticCountResetParser.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/FindDigitsCountParser.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/FindDigitsCountParser.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/FindDigitsCountParser.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/StdInSource.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/StdInSource.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/StdInSource.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/StringSource.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/StringSource.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/StringSource.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/parser/alphabeticcountapp.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/parser/alphabeticcountapp.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/parser/alphabeticcountapp.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/parser
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/stdinutility.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/stdinutility.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/stdinutility.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 build CMakeFiles/sample.dir/utility.cpp.o: CXX_COMPILER__sample_Debug /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/utility.cpp || cmake_object_order_depends_target_sample
   DEFINES = -D_CRT_SECURE_NO_WARNINGS
   DEP_FILE = CMakeFiles/sample.dir/utility.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++2b
+  FLAGS = -g -fcolor-diagnostics -std=gnu++2b
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
-  TARGET_PDB = sample.pdb
 
 
 # =============================================================================
@@ -328,13 +268,12 @@ build CMakeFiles/sample.dir/utility.cpp.o: CXX_COMPILER__sample_Debug /Users/ogu
 # Link the executable sample
 
 build sample: CXX_EXECUTABLE_LINKER__sample_Debug CMakeFiles/sample.dir/AlertDialog.cpp.o CMakeFiles/sample.dir/AnalyticalCircle.cpp.o CMakeFiles/sample.dir/Circle.cpp.o CMakeFiles/sample.dir/Complex.cpp.o CMakeFiles/sample.dir/File.cpp.o CMakeFiles/sample.dir/Fraction.cpp.o CMakeFiles/sample.dir/Point.cpp.o CMakeFiles/sample.dir/Sensor.cpp.o CMakeFiles/sample.dir/company/Employee.cpp.o CMakeFiles/sample.dir/company/HumanResources.cpp.o CMakeFiles/sample.dir/company/Manager.cpp.o CMakeFiles/sample.dir/company/SalesManager.cpp.o CMakeFiles/sample.dir/company/Worker.cpp.o CMakeFiles/sample.dir/company/companyApp.cpp.o CMakeFiles/sample.dir/csderrorutil.c.o CMakeFiles/sample.dir/csderrorutility.cpp.o CMakeFiles/sample.dir/csdnumeric.cpp.o CMakeFiles/sample.dir/csdutil.c.o CMakeFiles/sample.dir/datetimeutil.c.o CMakeFiles/sample.dir/game/Card.cpp.o CMakeFiles/sample.dir/main.cpp.o CMakeFiles/sample.dir/mathutility.cpp.o CMakeFiles/sample.dir/parser/FileSource.cpp.o CMakeFiles/sample.dir/parser/FindAlphabeticCountResetParser.cpp.o CMakeFiles/sample.dir/parser/FindDigitsCountParser.cpp.o CMakeFiles/sample.dir/parser/StdInSource.cpp.o CMakeFiles/sample.dir/parser/StringSource.cpp.o CMakeFiles/sample.dir/parser/alphabeticcountapp.cpp.o CMakeFiles/sample.dir/stdinutility.cpp.o CMakeFiles/sample.dir/utility.cpp.o
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles/sample.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
   TARGET_FILE = sample
-  TARGET_PDB = sample.pdb
+  TARGET_PDB = sample.dbg
 
 
 #############################################
@@ -379,14 +318,14 @@ build all: phony sample
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
