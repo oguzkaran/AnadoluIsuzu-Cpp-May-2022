@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sample::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sample-Debug-a5e806f2575249c3eb83.json",
+					"jsonFile" : "target-sample-Debug-9b82126ae22f5ec42ce3.json",
 					"name" : "sample",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/cmake-build-debug",
-		"source" : "/Users/oguzkaran/Dropbox/CSD/Kurslar/AnadoluIsuzu-Cpp-May-2022/src/SampleClion"
+		"build" : "/Users/oguzkaran/Documents/GitHub/AnadoluIsuzu-Cpp-May-2022/src/SampleClion/cmake-build-debug",
+		"source" : "/Users/oguzkaran/Documents/GitHub/AnadoluIsuzu-Cpp-May-2022/src/SampleClion"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 7
 	}
 }

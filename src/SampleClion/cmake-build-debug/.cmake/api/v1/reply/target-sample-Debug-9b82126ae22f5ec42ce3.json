@@ -42,10 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fcolor-diagnostics"
-				},
-				{
-					"fragment" : "-std=gnu++2b"
+					"fragment" : "-g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics"
 				}
 			],
 			"defines" : 
@@ -99,10 +96,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fcolor-diagnostics"
-				},
-				{
-					"fragment" : "-std=gnu11"
+					"fragment" : "-g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics"
 				}
 			],
 			"defines" : 
